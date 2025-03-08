@@ -2,6 +2,12 @@ Overview:
 ---------
 The “bda_manager.py” script demonstrates how to set up, manage, and run AWS Bedrock Data Automation (BDA) projects. It includes functionality to create a new project, invoke inference on video or image data, retrieve resulting metadata, and process those results. In this example, I showcase the “advertisement” pre-made blueprint, illustrating how you can quickly incorporate various ready-to-use blueprints in BDA (There are various pre-made blueprints, such as payslip processing, moderation, ...)
 
+Important Note:
+---------------
+• Bedrock Data Automation is currently available only in the us-east-1 (N. Virginia) region.  
+• You must have a valid S3 bucket (bda_bucket_name) ready for input and output artifacts (You can create it however you want, either through the console or using Boto3.)
+• Before using this script, create a BDA project at least once through the AWS Console. This ensures that the required service roles (such as data_automation_profile) are created and available.
+
 Main Functionalities:
 ---------------------
 1. Creating a Bedrock Data Automation project:
